@@ -2,61 +2,91 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>2797263388</fileChecksum>
+  <fileChecksum>1931638306</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
-      <file>$TOOLKIT_DIR$\config\lnk430F149.xcl</file>
-      <file>$PROJ_DIR$\Debug\Obj\interface.r43</file>
-      <file>$PROJ_DIR$\Debug\Obj\ILI9325.r43</file>
-      <file>$PROJ_DIR$\Debug\Obj\ILI9325.pbi</file>
-      <file>$PROJ_DIR$\global.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\fft.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+      <file>$PROJ_DIR$\fft.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\math.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\ymath.h</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\fft.r43</file>
+      <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+      <file>$TOOLKIT_DIR$\doc\infocenter\index.ENU.html</file>
+      <file>$PROJ_DIR$\..\MSP430FFT\main.c</file>
+      <file>$PROJ_DIR$\global.c</file>
+      <file>$PROJ_DIR$\gui.c</file>
+      <file>$PROJ_DIR$\main.c</file>
       <file>$TOOLKIT_DIR$\config\multiplier.xcl</file>
-      <file>$PROJ_DIR$\display.h</file>
-      <file>$PROJ_DIR$\16x8.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\global.r43</file>
-      <file>$PROJ_DIR$\Debug\Obj\gui.r43</file>
       <file>$PROJ_DIR$\Debug\Obj\interface.pbi</file>
-      <file>$PROJ_DIR$\chinese.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\global.pbi</file>
-      <file>$PROJ_DIR$\interface.h</file>
+      <file>$TOOLKIT_DIR$\config\lnk430F149.xcl</file>
+      <file>$PROJ_DIR$\Debug\Obj\global.r43</file>
+      <file>$PROJ_DIR$\16x8.h</file>
       <file>$PROJ_DIR$\Debug\Obj\gui.pbi</file>
+      <file>$PROJ_DIR$\ILI9325.c</file>
       <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.r43</file>
       <file>$PROJ_DIR$\bmp.h</file>
       <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$PROJ_DIR$\interface.c</file>
+      <file>$PROJ_DIR$\Debug\Obj\ILI9325.pbi</file>
+      <file>$PROJ_DIR$\global.h</file>
+      <file>$PROJ_DIR$\display.h</file>
       <file>$PROJ_DIR$\Debug\Obj\INI9325.pbd</file>
-      <file>$PROJ_DIR$\gui.h</file>
-      <file>$PROJ_DIR$\ILI9325.h</file>
-      <file>$PROJ_DIR$\gui.c</file>
-      <file>$PROJ_DIR$\Debug\Exe\INI9325.d43</file>
-      <file>$PROJ_DIR$\Debug\Obj\display.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\interface.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\ILI9325.r43</file>
+      <file>$PROJ_DIR$\Debug\Obj\gui.r43</file>
+      <file>$PROJ_DIR$\interface.h</file>
+      <file>$PROJ_DIR$\chinese.h</file>
       <file>$PROJ_DIR$\display.c</file>
-      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\global.pbi</file>
       <file>$TOOLKIT_DIR$\inc\intrinsics.h</file>
       <file>$TOOLKIT_DIR$\inc\msp430X14X.h</file>
-      <file>$PROJ_DIR$\global.c</file>
-      <file>$PROJ_DIR$\interface.c</file>
+      <file>$TOOLKIT_DIR$\inc\in430.h</file>
+      <file>$PROJ_DIR$\Debug\Exe\INI9325.d43</file>
       <file>$PROJ_DIR$\Debug\Exe\INI9325.txt</file>
+      <file>$PROJ_DIR$\ILI9325.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\display.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\display.r43</file>
-      <file>$PROJ_DIR$\ILI9325.c</file>
-      <file>$PROJ_DIR$\main.c</file>
       <file>$PROJ_DIR$\Debug\Obj\main.r43</file>
+      <file>$PROJ_DIR$\gui.h</file>
+      <file>$TOOLKIT_DIR$\lib\dlib\dl430fn.h</file>
+      <file>$PROJ_DIR$\fft.c</file>
     </outputs>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>XLINK</name>
-          <file> 30 22</file>
+          <file> 42 43</file>
         </tool>
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\Debug\Obj\INI9325.pbd</name>
+      <name>$PROJ_DIR$\global.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 20</file>
+        </tool>
+      </outputs>
       <inputs>
         <tool>
-          <name>BILINK</name>
-          <file> 3 23 12 14 10 17</file>
+          <name>BICOMP</name>
+          <file> 29 40 41 39</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 29 40 41 39</file>
         </tool>
       </inputs>
     </file>
@@ -65,137 +95,7 @@
       <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 14</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 9</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 19 20 27 25 26 4 7 16 11</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 19 20 27 25 26 4 7 16 11</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\Debug\Exe\INI9325.d43</name>
-      <outputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 30</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>XLINK</name>
-          <file> 0 5 2 31 8 9 1 34 15</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\display.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 23</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 31</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 6 4 27 25 26 19 20</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 6 4 27 25 26 19 20</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\global.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 12</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 8</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 4 27 25 26</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 4 27 25 26</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\interface.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 10</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 1</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 19 13</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 19 13</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\ILI9325.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 3</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 2</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 20 27 25 26 4</file>
-        </tool>
-        <tool>
-          <name>ICC430</name>
-          <file> 20 27 25 26 4</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\main.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 17</file>
+          <file> 22</file>
         </tool>
         <tool>
           <name>ICC430</name>
@@ -205,11 +105,146 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 27 25 26 6 4 19 20 13</file>
+          <file> 48 44 40 41 39 29 21 25 36</file>
         </tool>
         <tool>
           <name>ICC430</name>
-          <file> 27 25 26 6 4 19 20 13</file>
+          <file> 48 44 40 41 39 29 21 25 36</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\main.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 40 41 39 30 29 48 3 44 35 4 0 8 6 11 2 5 7 9</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 40 41 39 30 29 48 3 44 35 4 0 8 6 11 49 2 5 7 9</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\ILI9325.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 28</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 33</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 44 40 41 39 29</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 44 40 41 39 29</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\interface.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48 35</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 48 35</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Obj\INI9325.pbd</name>
+      <inputs>
+        <tool>
+          <name>BILINK</name>
+          <file> 28 45 1 38 22 18 26</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\display.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 46</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 30 29 40 41 39 48 44</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 30 29 40 41 39 48 44</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\INI9325.d43</name>
+      <outputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 43</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>XLINK</name>
+          <file> 19 17 33 46 10 20 34 32 47 24</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\fft.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 1</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 10</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>ICC430</name>
+          <file> 3</file>
         </tool>
       </inputs>
     </file>
