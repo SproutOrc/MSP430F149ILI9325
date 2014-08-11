@@ -1869,7 +1869,7 @@
     </settings>
   </configuration>
   <file>
-    <name>$PROJ_DIR$\display.c</name>
+    <name>$PROJ_DIR$\config.c</name>
   </file>
   <file>
     <name>$PROJ_DIR$\fft.c</name>

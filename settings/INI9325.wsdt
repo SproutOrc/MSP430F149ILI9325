@@ -3,8 +3,11 @@
 <Workspace>
   <ConfigDictionary>
     <CurrentConfigs>
+      <Project>ADC_IN0_1602/Debug</Project>
       <Project>INI9325/Debug</Project>
     </CurrentConfigs>
+    <CurrentProj>INI9325</CurrentProj>
+    <OverviewSelected>0</OverviewSelected>
   </ConfigDictionary>
   <Desktop>
     <Static>
@@ -24,7 +27,7 @@
       </Build>
     </Static>
     <Windows>
-      <Wnd1>
+      <Wnd0>
         <Tabs>
           <Tab>
             <Identity>TabID-12415-13836</Identity>
@@ -32,14 +35,17 @@
             <Factory>Workspace</Factory>
             <Session>
               <NodeDict>
+                <ExpandedNode>&lt;ws&gt;</ExpandedNode>
+                <ExpandedNode>ADC_IN0_1602</ExpandedNode>
+                <ExpandedNode>ADC_IN0_1602/main.c</ExpandedNode>
                 <ExpandedNode>INI9325</ExpandedNode>
               </NodeDict>
             </Session>
           </Tab>
         </Tabs>
         <SelectedTab>0</SelectedTab>
-      </Wnd1>
-      <Wnd0>
+      </Wnd0>
+      <Wnd1>
         <Tabs>
           <Tab>
             <Identity>TabID-23247-16089</Identity>
@@ -49,71 +55,36 @@
           </Tab>
         </Tabs>
         <SelectedTab>0</SelectedTab>
-      </Wnd0>
+      </Wnd1>
     </Windows>
     <Editor>
       <Pane>
         <Tab>
           <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\..\..\Soft\IAR Systems\Embedded Workbench 6.0 Evaluation\430\doc\infocenter\index.ENU.html</Filename>
+          <Filename>$WS_DIR$\..\..\Project\MSP430F149\DM430-L&#x6D4B;&#x8BD5;&#x793A;&#x4F8B;&#x6e90;&#x7A0B;&#x5e8F;\DM430-L 2014\ADC_IN0_1602\main.c</Filename>
+          <XPos>0</XPos>
+          <YPos>69</YPos>
+          <SelStart>2987</SelStart>
+          <SelEnd>2987</SelEnd>
         </Tab>
         <Tab>
           <Factory>TextEditor</Factory>
           <Filename>$WS_DIR$\main.c</Filename>
           <XPos>0</XPos>
-          <YPos>0</YPos>
-          <SelStart>248</SelStart>
-          <SelEnd>248</SelEnd>
+          <YPos>129</YPos>
+          <SelStart>3285</SelStart>
+          <SelEnd>3285</SelEnd>
         </Tab>
         <ActiveTab>1</ActiveTab>
-        <Tab>
-          <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\interface.c</Filename>
-          <XPos>0</XPos>
-          <YPos>0</YPos>
-          <SelStart>139</SelStart>
-          <SelEnd>235</SelEnd>
-        </Tab>
-        <Tab>
-          <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\ILI9325.h</Filename>
-          <XPos>0</XPos>
-          <YPos>0</YPos>
-          <SelStart>591</SelStart>
-          <SelEnd>591</SelEnd>
-        </Tab>
       </Pane>
       <ActivePane>0</ActivePane>
-      <Pane>
-        <Tab>
-          <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\gui.h</Filename>
-          <XPos>0</XPos>
-          <YPos>18</YPos>
-          <SelStart>272</SelStart>
-          <SelEnd>272</SelEnd>
-        </Tab>
-        <Tab>
-          <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\..\MSP430FFT\main.c</Filename>
-          <XPos>0</XPos>
-          <YPos>0</YPos>
-          <SelStart>2187</SelStart>
-          <SelEnd>2187</SelEnd>
-        </Tab>
-        <ActiveTab>1</ActiveTab>
-      </Pane>
       <Sizes>
         <Pane>
-          <X>500000</X>
-          <Y>500000</Y>
-        </Pane>
-        <Pane>
-          <X>500000</X>
-          <Y>500000</Y>
+          <X>1000000</X>
+          <Y>1000000</Y>
         </Pane>
       </Sizes>
-      <SplitMode>4</SplitMode>
+      <SplitMode>1</SplitMode>
     </Editor>
     <Positions>
       <Top>
@@ -128,7 +99,7 @@
       <Left>
         <Row0>
           <Sizes>
-            <Wnd1>
+            <Wnd0>
               <Rect>
                 <Top>-2</Top>
                 <Left>-2</Left>
@@ -143,7 +114,7 @@
                 <sizeVertCX>140000</sizeVertCX>
                 <sizeVertCY>708585</sizeVertCY>
               </Rect>
-            </Wnd1>
+            </Wnd0>
           </Sizes>
         </Row0>
       </Left>
@@ -155,7 +126,7 @@
       <Bottom>
         <Row0>
           <Sizes>
-            <Wnd0>
+            <Wnd1>
               <Rect>
                 <Top>-2</Top>
                 <Left>-2</Left>
@@ -170,7 +141,7 @@
                 <sizeVertCX>125000</sizeVertCX>
                 <sizeVertCY>241838</sizeVertCY>
               </Rect>
-            </Wnd0>
+            </Wnd1>
           </Sizes>
         </Row0>
       </Bottom>

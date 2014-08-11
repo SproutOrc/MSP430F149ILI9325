@@ -13,7 +13,7 @@
 void GUI_clearscreen(uint b_color)
 {
 	uint i,j;
-	LCD_setwindow(0,0,240,320);
+	LCD_setwindow(0,0,239,319);
 	for (i=0;i<320;i++)
 	{
 		for(j=0;j<240;j++)

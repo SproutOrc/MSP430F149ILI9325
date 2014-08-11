@@ -1,5 +1,6 @@
 #include <msp430x14x.h>
 #include "display.h"
+#include "config.h"
 #include "global.h"
 #include "gui.h"
 #include "fft.h"
@@ -15,7 +16,11 @@
 #define PI 3.1415926
 #define PI_TWO 2.0 * 3.141592653
 
-Complex data[NUM];
+Complex data[NUM + 1];
+
+char flag = 0;
+
+int count = 0;
 
 // set up twiddle constants in factor 
 Complex const factor[H_NUM] = {
@@ -49,40 +54,83 @@ void Init_Clk(void)
   
 }
 
+//*************************************************************************
+//	ADC初始化程序，用于配置ADC相关寄存器
+//*************************************************************************
+void ADC_Init()
+{
+  P6SEL|=0x01;                                    //选择ADC通道
+  ADC12CTL0|= ADC12ON + MSC + SHT0_8; //ADC电源控制开，16个CLK，内部基准2.5V
+  ADC12CTL1|= SHP + CONSEQ1;            //SMCLK做时钟源
+  ADC12MCTL0= SREF0 + INCH_0;                     //参考控制位及通道选择，这里选择通道0
+  ADC12IE|= 0x01;                                 //中断允许
+  ADC12CTL0|= ENC;                                //使能转换器
+}
+
+//*************************************************************************
+//	ADC中断服务程序
+//*************************************************************************
+#pragma vector=ADC_VECTOR
+__interrupt void ADC12ISR(void)
+{
+    (data + count)->real = ADC12MEM0 * 1.0;                     //读取ADC转换值 
+    ++count;
+    if (count > 128) {
+        count = 128;
+        flag = 1;
+    }
+    P6OUT &= ~0x80;
+}
+
 void main(void) 																  
 {	
     int value;
+    int i;
     WDTCTL = WDTPW + WDTHOLD;    // 关闭看门狗 
-
-    Init_Clk();		//时钟初始化
-    DelayMs(50);   
+    Clock_Init();	//时钟初始化
+    DelayMs(50);  
+    ADC_Init();     //初始化ADC配置
+    delay_ms(100);  //延时100ms
     InitPort();     //彩屏端口初始化
+    P6DIR |= 0x80;
+    P6OUT |= 0x80;
     
     ILI9325_initial();    //液晶初始化程序
     DelayMs(50);
+    
+    /**
     int i;
     for (i = 0; i < 128; i++) {
         (data + i)->real = (float)2 + 3 * cos (2 * PI * 50 * i / 256 - PI * 30 / 180) 
                                      + 1.5 * cos (2 * PI * 75 * i / 256 + PI * 90 / 180);
     }
-    FFT(data, factor, NUM, SERIES);
-    
+    */
     GUI_clearscreen(WHITE);
-    //MAIN_WINDOW();
-    
-    for (i = 0; i < 64; i++) {
-        value = (int)sqrt(  
-                        (data + i)->real * (data + i)->real 
-                        + (data + i)->imag * (data + i)->imag
-                     );
-        if (value > 240) value = 240;
-        GUI_box(0, i * 5, value, i * 5 + 3, 0x001f);//画实心矩形
-    }
-    LPM4;
+    _EINT(); //使能中断
+    ADC12CTL0 |= ADC12SC;
     // _BIS_SR(LPM3 + GIE);//进入低功耗模式
     while(1)
     {
+        if(flag == 1) {
+            P6OUT |= 0x80;
+            //ADC12CTL0 |= ADC12SC;           //开启转换
+            //ADC12CTL0 &= ~ADC12SC;          //清零
+            FFT(data, factor, NUM, SERIES);
         
+            GUI_clearscreen(WHITE);
+            //MAIN_WINDOW();
+            
+            for (i = 0; i < 64; i++) {
+                value = (int)sqrt(  
+                                (data + i)->real * (data + i)->real 
+                                + (data + i)->imag * (data + i)->imag
+                             ) / 128;
+                if (value > 240) value = 240;
+                GUI_box(0, i * 5, value, i * 5 + 3, 0x001f);//画实心矩形
+            }
+            flag = 0;
+            count = 0;
+        }
     }
     
 }
